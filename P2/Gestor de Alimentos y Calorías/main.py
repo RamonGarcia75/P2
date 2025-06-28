@@ -13,6 +13,12 @@ def mostrar_menu_principal():
     print("\n" + "-" * 50)
 
 def main():
+    nutrigest.borrarPantalla()
+    print("\n\t\t\t🍎 BIENVENIDO A NUTRIGEST 🍎")
+    print("\n\tAntes de comenzar, ingresa tus datos personales.")
+    nutrigest.esperarTecla()
+    nutrigest.ingresar_datos_usuario()
+
     while True:
         nutrigest.borrarPantalla()
         mostrar_menu_principal()
